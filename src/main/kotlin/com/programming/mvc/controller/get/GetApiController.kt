@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api")
-internal class GetApiController {
+class GetApiController {
 
     @GetMapping(path = ["/hello"])
     fun hello(): String{
