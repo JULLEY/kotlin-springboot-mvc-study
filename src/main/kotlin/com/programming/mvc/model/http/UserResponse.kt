@@ -1,6 +1,5 @@
 package com.programming.mvc.model.http
 
-import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.PropertyNamingStrategy
 import com.fasterxml.jackson.databind.annotation.JsonNaming
 
@@ -8,8 +7,7 @@ data class UserResponse (
     var result:Result?=null,
     var description:String?=null,
 
-    @JsonProperty("user")
-    var userRequest: MutableList<UserRequest>?=null,
+    var user: MutableList<UserRequest>?=null,
 )
 
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy::class)
