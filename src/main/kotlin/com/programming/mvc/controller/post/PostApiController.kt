@@ -17,11 +17,11 @@ class PostApiController {
         return "request-mapping"
     }
 
-    // object mapper
-    // json -> object
-    // object -> json
     @PostMapping("/post-mapping/object")
     fun postMappingObject(@RequestBody userRequest: UserRequest): UserRequest {
+        // object mapper
+        // json -> object
+        // object -> json
         println(userRequest)
         return userRequest
     }
