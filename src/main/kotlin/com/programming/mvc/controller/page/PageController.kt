@@ -17,7 +17,7 @@ class PageController {
     @GetMapping("/test")
     fun response(): UserRequest {
         return UserRequest().apply {
-            this.name = "곽두팔"
+            this.name = "최현웅"
         }
     }
 }
