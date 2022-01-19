@@ -44,7 +44,7 @@ class PutApiController {
             })
             userList.add(UserRequest().apply {
                 this.name = "zzieuni"
-                this.age = 40
+                this.age = 30
                 this.email = "zzieuni@zzieuni.com"
                 this.address = "zzieuni address"
                 this.phoneNumber = "010-7128-4284"
