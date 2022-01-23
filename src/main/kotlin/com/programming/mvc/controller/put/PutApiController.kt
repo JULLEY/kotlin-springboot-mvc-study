@@ -43,11 +43,11 @@ class PutApiController {
                 this.phoneNumber = "010-1234-1234"
             })
             userList.add(UserRequest().apply {
-                this.name = "zzieuni"
-                this.age = 31
-                this.email = "zzieuni@zzieuni.com"
-                this.address = "zzieuni address"
-                this.phoneNumber = "010-7128-4284"
+                this.name = "dd"
+                this.age = 32
+                this.email = "dd@dd.com"
+                this.address = "dd address"
+                this.phoneNumber = "010-1234-5678"
             })
             this.user = userList
         }
