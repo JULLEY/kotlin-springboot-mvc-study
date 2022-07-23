@@ -11,13 +11,17 @@ data class ErrorResponse (
         @field:JsonProperty("http_status")
         var httpStatus:String?=null,
 
+        @field:JsonProperty("http_method")
+        var httpMethod:String?=null,
+
         var message:String?=null,
         var path:String?=null,
         var timestamp:LocalDateTime?=null,
-        var error:MutableList<Error>?= mutableListOf()
+        var errors:MutableList<Error>?= mutableListOf()
 )
 
 data class Error (
-        var filed:String?=null,
-        var message:String?=null
+        var field:String?=null,
+        var message:String?=null,
+        var value:Any?=null
 )
